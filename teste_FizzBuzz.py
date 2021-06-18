@@ -22,8 +22,6 @@ def test_should_return_buzz_for_multiple_of_5():
     assert "Buzz" == fizz_buzz(5)
     assert "Buzz" == fizz_buzz(10)
 
-def test_should_return_fizzbuzz_for_15():
+def test_should_return_fizzbuzz_for_multiples_of_3_and_5():
     assert "FizzBuzz" == fizz_buzz(15)
-
-def test_should_return_fizzbuzz_for_30():
     assert "FizzBuzz" == fizz_buzz(30)
