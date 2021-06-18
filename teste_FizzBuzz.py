@@ -25,3 +25,7 @@ def test_should_return_buzz_for_multiple_of_5():
 def test_should_return_fizzbuzz_for_multiples_of_3_and_5():
     assert "FizzBuzz" == fizz_buzz(15)
     assert "FizzBuzz" == fizz_buzz(30)
+
+
+for number in range(1,101):
+    print(fizz_buzz(number))
