@@ -1,13 +1,14 @@
 import pytest
 
-def fizz_buzz(i):
-    if i == 15:
-        return "FizzBuzz"
-    if i % 3 == 0:
-        return "Fizz"
-    if i % 5 == 0:
-        return "Buzz"
-    return i
+def fizz_buzz(numero):
+    result = ""
+    if numero % 3 == 0:
+         result += "Fizz"
+    if numero % 5 == 0:
+        result += "Buzz"
+    if result:
+        return result
+    return numero
 
 def test_should_return_number_for_number():
     assert 1 == fizz_buzz(1)
@@ -23,3 +24,6 @@ def test_should_return_buzz_for_multiple_of_5():
 
 def test_should_return_fizzbuzz_for_15():
     assert "FizzBuzz" == fizz_buzz(15)
+
+def test_should_return_fizzbuzz_for_30():
+    assert "FizzBuzz" == fizz_buzz(30)
