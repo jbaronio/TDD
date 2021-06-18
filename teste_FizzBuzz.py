@@ -3,7 +3,7 @@ import pytest
 def fizz_buzz(i):
     if i % 3 == 0:
         return "Fizz"
-    if i == 5:
+    if i % 5 == 0:
         return "Buzz"
     return i
 
@@ -17,3 +17,6 @@ def test_should_return_fizz_for_multiple_of_3():
 
 def test_should_return_buzz_for_5():
     assert "Buzz" == fizz_buzz(5)
+
+def test_should_return_buzz_for_10():
+    assert "Buzz" == fizz_buzz(10)
